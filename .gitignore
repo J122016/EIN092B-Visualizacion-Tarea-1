@@ -10,3 +10,9 @@ venv.bak/
 
 # Cache
 __pycache__/
+
+# Datasets
+*.csv
+
+# Exports
+exports/
