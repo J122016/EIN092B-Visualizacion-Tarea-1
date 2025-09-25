@@ -15,7 +15,7 @@ def graph_entidades_titulados_anno(
     plt.xticks(rotation=45)
     plt.tight_layout()
     if display:
-        plt.show()
+        plt.figure()
     plot.figure.savefig(export, dpi=300)
     plt.close()
     return
@@ -35,7 +35,7 @@ def graph_total_titulados_anno(
     plt.xticks(rotation=45)
     plt.tight_layout()
     if display:
-        plt.show()
+        plt.figure()
     plot.figure.savefig(export, dpi=300)
     plt.close()
     return df

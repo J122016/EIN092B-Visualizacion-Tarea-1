@@ -8,7 +8,7 @@ from dataset_analysis import *
 def main():
     FILENAME = "TITULADO_2007-2024_web_19_05_2025_E.csv"
     EXPORT_PATH = "exports/"
-    EXPORT_COUNTER = 0
+    export_counter = 0
 
     # Carga dataset, limpieza e inspeccion basica
     print("Cargando dataset...")
@@ -22,15 +22,17 @@ def main():
     # Gráficos
     # 1. Grafico de prueba - entidad con titulados (filas) en cada año
     graph_entidades_titulados_anno(
-        df, export=f"{EXPORT_PATH}_{EXPORT_COUNTER}_test_analysis.svg", display=True
+        df, export=f"{EXPORT_PATH}_{export_counter}_test_analysis.svg", display=True
     )
-    EXPORT_COUNTER += 1
+    export_counter += 1
 
     # 1. Grafico de prueba - titulados por año
     graph_total_titulados_anno(
-        df, export=f"{EXPORT_PATH}_{EXPORT_COUNTER}_test_analysis.svg", display=True
+        df, export=f"{EXPORT_PATH}_{export_counter}_test_analysis.svg", display=True
     )
-    EXPORT_COUNTER += 1
+    export_counter += 1
+
+    plt.show()
 
     return
 
