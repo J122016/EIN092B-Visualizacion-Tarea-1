@@ -52,6 +52,10 @@ o bien usar `notebook.ipynb` que requiere tener Jupyter instalado.
 
 - (Enlace a definir) + uso de exportaciones generadas
 
+## Notas
+
+Para encontrar/agrupar gráficos específicos, se recomienda filtrar por nombre. (*tip VSCode: **Ctrl + Alt + f***)
+
 ## Integrantes:
 - Rafael Salinas
 - Javier Torres
